@@ -1,0 +1,306 @@
+body {
+	margin: 0;
+	padding: 0;
+	color: black;	
+	font-size: 8pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #797576; 
+}
+
+a { 
+	color: black; 
+	text-decoration: underline;
+}
+
+a:hover { 
+	color: #333333; 
+	text-decoration: none;
+}
+
+img { border: none; }
+
+p {
+	margin: 1em 0;
+	padding: 0;
+}
+
+th { line-height:18px;}
+
+td { line-height:18px; }
+
+h1 {
+	font-size: 13pt;
+	font-weight: bold;
+	margin: 0 0 1em 0;
+}
+
+h2 { 
+	font-size: 11pt; 
+	font-weight: bold; 
+	margin: 0 0 1px 0;
+}
+
+h3 { 
+	font-size: 9pt; 
+	font-weight: bold; 
+	margin: 5px 0 0 0px;
+}
+
+form {
+	padding: 0;
+	margin: 0;
+}
+
+form td { 
+	padding-right: 8px; 
+	line-height: 25px;
+}
+
+#search fieldset {
+	border: 1px solid #0C187E;
+	width: 40em;
+	padding: 5px;
+	margin: auto;
+}
+
+#search legend {
+	color: #F99200;
+	font-weight: bold;
+}
+
+#search { 
+	line-height: 160%; 
+	padding: 5px 0 10px 0;
+}
+
+#wrapper {
+	text-align: center;
+	margin: 5px auto 10px auto;
+	padding: 5px;
+	background-color: white;
+    	/* width: 771px; */
+	width: 1020px;
+	border: 2px solid black;
+}
+
+#wrapper_p {
+        text-align: center;
+        margin: 5px 0 10px 0;
+        padding: 5px;
+        background-color: white;
+        width: 771px;
+}
+#top {
+	text-align: left;
+	margin: 0;
+	background-color: #CCCCCC;
+	position: relative;
+	width: 100%;
+	height: 70px;
+        border-bottom: 2px solid white;
+}
+
+#masthead {
+	margin: 10px 0px 10px 93px;
+}
+
+#logo {
+	margin: 10px;
+}
+
+#admin_link {
+	position: absolute; 
+	top: 0; 
+	right: 0;
+	background: #F7CB52;
+	border-bottom: 2px solid white;
+	border-left: 2px solid white;
+	padding: 2px 10px 4px 10px;
+}
+* html #admin_link { right: -1px; } /* IE Hack */
+
+#season {
+	position: absolute;
+	bottom: 1px;
+	right: 5px;
+	color: #0C187E;
+	font-weight: bold;
+}
+
+#nav {
+	background-color: #0C187E;
+	text-align: center;  
+	border-bottom: 2px solid white;
+	line-height: 22px;
+}
+
+#nav ul { 
+	padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#nav li {
+	display: inline;
+	border-left: 1px solid white;
+	padding: 5px 20px;
+}
+
+#nav #first { border-left: none; }
+
+#nav li a { 
+	font-weight: bold; 
+	color: white; 
+	text-decoration: none;
+}
+
+#nav li a:hover { 
+	color: #F7CB52; 
+	text-decoration: underline; 
+}
+
+#notice {
+	background-color: #FFFF33;
+	font-weight: bold;
+	padding: 10px 5px;
+	border-bottom: 2px solid white;
+}
+
+#content {
+	text-align: left;
+	background-color: #FFF9EF;
+	padding: 0 3px 5px 3px;
+	position: relative;
+	/* width: 765px; */
+	width: 1020px;
+	min-height: 350px;
+}
+* html #content { height: 350px; } /* for IE */ 
+
+#content li { line-height: 150%; }
+
+#content-header {
+	color: white;
+	text-align: center;
+	background: #F7CB52;
+	border-bottom: 2px solid white; 
+	padding: 5px 0;
+	margin: 0 -3px;
+}
+
+#login-box {
+	border: 1px solid black; 
+	text-align: center; 
+	width: 350px; 
+	/*margin: 50px 0px 0px 192px;*/
+	margin: 50px 0 0 305px;
+	background: #A8A8CE;
+}
+
+#login-box span { font-weight: bold; }
+
+#foot {
+	text-align: center;
+	background-color: #F99200;
+	border-top: 2px solid white;
+}
+
+#foot span { 
+	line-height: 30px; 
+	color: white;
+}
+
+#foot span a, #foot span a:hover {
+	color: white;
+}
+
+#report {
+	text-align: center;
+}
+
+#comments {
+	background: white; 
+	padding: 5px; 
+	border: 1px solid black;
+}
+
+#disabled input {
+	font-weight: bold;
+}
+
+.clear { clear: both; }
+
+.status { color: red; }
+
+.even,.row2 { background-color: #FFFF99; }
+
+.odd,.row1 { background-color: #FFF9EF; }
+
+.inactive { color: #AAAAAA; }
+
+.error { 
+	color: #CC0000;
+	font-weight: bold; 
+}
+
+.smerr {
+	color: red;
+	font-size: 7pt;
+}
+
+.login { width: 125px; }
+
+.big { 
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+.small {
+	font-size: 7pt;
+}
+
+.center {
+	text-align: center;
+}
+
+.page {
+	color: #333333;
+}
+
+.pageInactive {
+	color: #CCCCCC;
+}
+
+.hid {
+	display:none;
+}
+
+#apptable td {
+	white-space: nowrap;
+}
+
+.alt-row {background-color:#fff;}
+.application 
+{
+	width:50%;
+	float:left;
+	padding-left:16px;
+}
+.changeEmail
+{
+	width:46%;
+	float:left;
+	padding-left:16px;
+}
+.changeEmail textarea
+{
+margin-top:8px;
+}
+.vertical_line
+{
+	height:255px;
+	width:1px;
+	background:#0C187E;
+	float:left;
+	margin:8px;
+}

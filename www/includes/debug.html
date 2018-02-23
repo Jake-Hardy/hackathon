@@ -1,0 +1,44 @@
+<?
+$DEBUG=0;
+if (isset($UID) && $UID == 1) {
+$DEBUG=1;
+}
+if ($DEBUG) {
+echo '<div style="text-align:left">';
+// report 1.
+echo "<pre>All the queries, by the order they are executed:\n";
+print_r($GLOBALS['all_the_queries']);
+echo '</pre>';
+
+// report 2.
+echo "<pre>All the queries, ordered by the time they took, descending:\n";
+arsort($GLOBALS['all_the_queries']);
+print_r($GLOBALS['all_the_queries']);
+echo '</pre>';
+
+// report 3.
+$sum = 0;
+foreach ($GLOBALS['all_the_queries'] AS $t) {
+    $sum += $t;
+}
+echo '<pre>';
+echo 'Total number of queries:   ' . $GLOBALS['global_query_counter'] . "\n";
+echo 'Total time spend querying: ' . $sum;
+echo '</pre>';
+
+// report 4.
+$distinct = array();
+foreach ($GLOBALS['all_the_queries'] AS $q=>$t) {
+    $parts = explode(' - ', $q);
+    unset($parts[0]);
+    $query = implode(' - ', $parts);
+    @$distinct[$query]++;
+}
+echo "<pre>How many duplications:\n";
+arsort($distinct);
+print_r($distinct);
+echo '</pre>';
+echo '</div>';
+}
+?>
+

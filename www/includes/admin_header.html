@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Christmas Clearinghouse - United Way of the CSRA</title>
+	<link href="/site.css" rel="stylesheet" type="text/css" media="all" />
+	<script type="text/javascript" src="/general.js"></script>
+</head>
+
+<body<? if ($_SERVER['SCRIPT_NAME'] != '/login.php') { echo ' onload="timer();populate();"'; } ?>>
+	<div id="wrapper">
+
+		<div id="top">
+			<a href="http://www.uwcsra.org/" target="_blank"><img src="/images/unitedwaylogo.gif" alt="United Way" id="logo" height="50" width="116" /></a>
+			<img src="/images/masthead.jpg" alt="Christmas Clearinghouse" height="50" width="300" id="masthead" />
+<? if (isset($_SESSION['al']) && $_SESSION['al'] == 2) { ?>
+			<div id="admin_link"><a href="/">User</a></div>
+<? 
+}
+if (isset($SHOWMENU) && $SHOWMENU == 1) { ?>
+			<div id="season"><? echo SEASON; ?> Season</div>
+<? } ?>
+		</div>
+
+<? if(isset($SHOWMENU) && $SHOWMENU == 1) { ?>
+		<div id="nav">
+			<ul>
+				<li id="first"><a href="/admin/index.php">HOME</a></li>
+				<li><a href="/admin/user.php">LIST USERS</a></li>
+				<li><a href="/admin/agency.php">LIST AGENCIES</a></li>
+				<li><a href="/admin/search.php">APPLICANT SEARCH</a></li>
+				<li><a href="/admin/reports.php?report=1.php">DUPLICATES</a></li>
+				<li><a href="/logoff.php">LOGOFF</a></li>
+			</ul>
+		</div>
+<? } ?>
+
+<? if(isset($_SESSION['notice'])) { ?>
+		<div id="notice">
+			<? echo $_SESSION['notice'] ?>
+		</div>
+<? unset($_SESSION['notice']); } ?>
+
+		<div id="content">
+			<!--Content-->
