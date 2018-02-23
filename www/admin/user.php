@@ -58,7 +58,7 @@ $(document).ready(function () {
 $cnt=0;
 foreach ($user as $_) { 
 	$cnt++;
-	$class = ($cnt % 2) ? 'even' : 'odd';
+	$class= '';
 	// for inactive users
 	if ($_['status'] == 2) {
 		$class .= ' inactive';

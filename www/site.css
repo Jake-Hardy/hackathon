@@ -239,9 +239,14 @@ form td {
 
 .status { color: red; }
 
-.even,.row2 { background-color: #FFFF99; }
+table {
+    border: none;
+    width: 100%;
+   background-image:
+  repeating-linear-gradient(#FFF9EF, #FFF9EF 1.7em, #FFFF99 1.7em, #FFFF99 3.4em);
+    border-collapse: collapse;
 
-.odd,.row1 { background-color: #FFF9EF; }
+}
 
 .inactive { color: #AAAAAA; }
 
