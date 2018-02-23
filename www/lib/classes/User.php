@@ -319,12 +319,15 @@ Class User {
 
 		// Begin Transaction
 		$db->autoCommit(false);
+
+		$qryDeleteUser = "UPDATE t_user SET status = 2 WHERE id = ?";
+
 		
 		// Run Delete Queries to Delete User and the User's Related Agencies
-		$qryDeleteUser = "DELETE FROM t_user WHERE id = ? LIMIT 1";
-		$qryDeleteAgency = "DELETE FROM t_user_agency WHERE user_id = ?";
+//		$qryDeleteUser = "DELETE FROM t_user WHERE id = ? LIMIT 1";
+//		$qryDeleteAgency = "DELETE FROM t_user_agency WHERE user_id = ?";
 		$q[] = $db->execute($qryDeleteUser,$id);
-		$q[] = $db->execute($qryDeleteAgency,$id);
+//		$q[] = $db->execute($qryDeleteAgency,$id);
 
                 // Error Check
                 $err = 0;
